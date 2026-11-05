@@ -23,11 +23,7 @@ public class Customer {
     }
 
     public Customer(String firstName, String lastName, String email,
-<<<<<<< HEAD
-            String contactNo, String jobTitle, Integer yearOfBirth) {
-=======
                      String contactNo, String jobTitle, Integer yearOfBirth) {
->>>>>>> eb8a63d (Add CustomerController test)
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -93,8 +89,4 @@ public class Customer {
     public void setYearOfBirth(Integer yearOfBirth) {
         this.yearOfBirth = yearOfBirth;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> eb8a63d (Add CustomerController test)

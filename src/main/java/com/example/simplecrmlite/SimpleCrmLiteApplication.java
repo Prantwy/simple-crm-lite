@@ -29,9 +29,5 @@ public class SimpleCrmLiteApplication {
 			}
 		};
 	}
-<<<<<<< HEAD
-}
-=======
 
 }
->>>>>>> eb8a63d (Add CustomerController test)

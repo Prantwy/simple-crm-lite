@@ -21,13 +21,13 @@ RUN mvn clean package -DskipTests
 # STAGE 2: RUN
 # ============================================
 # Use JRE instead of JDK as JRE is smaller and will run faster
-FROM eclipse-temurin:21-jre-alpine 
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /app
 
 # Copy JAR from build stage
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=build /app/target/*.jar /app.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "/app.jar"]
