@@ -6,4 +6,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> eb8a63d (Add CustomerController test)

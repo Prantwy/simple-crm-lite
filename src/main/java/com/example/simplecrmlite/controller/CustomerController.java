@@ -36,7 +36,11 @@ public class CustomerController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Customer> updateCustomer(@PathVariable Long id,
+<<<<<<< HEAD
             @RequestBody Customer updatedCustomer) {
+=======
+                                                     @RequestBody Customer updatedCustomer) {
+>>>>>>> eb8a63d (Add CustomerController test)
         return customerRepository.findById(id)
                 .map(existing -> {
                     existing.setFirstName(updatedCustomer.getFirstName());
@@ -59,4 +63,8 @@ public class CustomerController {
         customerRepository.deleteById(id);
         return ResponseEntity.noContent().build();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> eb8a63d (Add CustomerController test)
